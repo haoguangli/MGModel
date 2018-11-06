@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MGModel/*'
+  s.source_files = 'MGModel/*.{h,m}'
   
   # s.resource_bundles = {
   #   'MGModel' => ['MGModel/Assets/*.png']
