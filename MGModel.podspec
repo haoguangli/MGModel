@@ -32,12 +32,13 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'MGModel/*.{h,m}'
+  s.public_header_files = 'MGModel/*.{h}'
   
   # s.resource_bundles = {
   #   'MGModel' => ['MGModel/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'Foundation', 'CoreFoundation'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
