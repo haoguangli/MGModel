@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'MGModel'
   s.version          = '0.1.0'
   s.summary          = 'reflect json object to objc model'
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
