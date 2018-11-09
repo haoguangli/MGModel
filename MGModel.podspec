@@ -8,9 +8,7 @@ s.social_media_url = 'https://github.com/haoguangli'
 s.homepage     = 'https://github.com/haoguangli/MGModel'
 
 s.ios.deployment_target = '6.0'
-s.osx.deployment_target = '10.7'
-s.watchos.deployment_target = '2.0'
-s.tvos.deployment_target = '9.0'
+
 
 s.source       = { :git => 'https://github.com/haoguangli/MGModel.git', :tag => s.version.to_s }
 
