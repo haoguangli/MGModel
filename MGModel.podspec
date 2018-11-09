@@ -1,44 +1,23 @@
-#
-# Be sure to run `pod lib lint MGModel.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'MGModel'
-  s.version          = '0.1.0'
-  s.summary          = 'reflect json object to objc model'
-  s.license      = { :type => 'MIT', :file => 'LICENSE' }
+s.name         = 'MGModel'
+s.summary      = 'reflect json object to objc model.'
+s.version      = '0.1.0'
+s.license      = { :type => 'MIT', :file => 'LICENSE' }
+s.authors      = { 'maoguang' => 'guangmao53@gmail.com' }
+s.social_media_url = 'https://github.com/haoguangli'
+s.homepage     = 'https://github.com/haoguangli/MGModel'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+s.ios.deployment_target = '6.0'
+s.osx.deployment_target = '10.7'
+s.watchos.deployment_target = '2.0'
+s.tvos.deployment_target = '9.0'
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.source       = { :git => 'https://github.com/haoguangli/MGModel.git', :tag => s.version.to_s }
 
-  s.homepage         = 'https://github.com/haoguangli/MGModel'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'li' => 'hhgl37006107@163.com' }
-  s.source           = { :git => 'https://github.com/haoguangli/MGModel.git', :tag => "#{s.version}"}
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.requires_arc = true
+s.source_files = 'MGModel/*.{h,m}'
+s.public_header_files = 'MGModel/*.{h}'
 
-  s.ios.deployment_target = '8.0'
+s.frameworks = 'Foundation', 'CoreFoundation'
 
-  s.source_files = "MGModel/*.{h,m}"
-  s.public_header_files = "MGModel/*.{h}"
-  
-  # s.resource_bundles = {
-  #   'MGModel' => ['MGModel/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'Foundation', 'CoreFoundation'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
